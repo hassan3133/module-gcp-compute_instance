@@ -1,5 +1,5 @@
 # Terraform GCP Compute instance
-![Maintained by Priceline.com](https://img.shields.io/badge/maintained%20by-priceline.com-blue)
+![Maintained by Hassan-Devops](https://img.shields.io/badge/maintained%20by-priceline.com-blue)
 ![Terraform Version](https://img.shields.io/badge/tf-%3E%3D0.13-blue.svg)
 
 ## Usage
