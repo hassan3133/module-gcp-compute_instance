@@ -1,0 +1,70 @@
+---
+computetest_1:
+  instance_id: 1
+  machine_type: g1-small
+  servertype: computetest
+  cell: guse4-poc
+  clusterid: a
+  boot_disk:
+    size: 128
+    type: pd-ssd
+    image: windows-2019
+    #snapshot: projects/pcln-pl-airanalytics-prod/global/snapshots/guse4-air-001-boot
+    device_name: test-boot-disk
+  subnet_type: private
+  additional_disks:
+    disk_01:
+      size: 100
+      type: pd-ssd
+      device_name: test_disk_01
+      image: windows-2019
+    disk_02:
+      size: 150
+      type: pd-standard
+    disk_03:
+      size: 50
+  team: sco_cd
+  labels:
+    owner: common_svcs_dev_priceline_com
+    dns: ""
+    inventory: ""
+    ansible: done
+  tags:
+  - infrastructure
+  - midtier-application
+  permissions:
+    instanceAdminV1:
+    - group:clouddev@priceline.com
+computetest_2:
+  instance_id: 2
+  machine_type: g1-small
+  servertype: computetest
+  cell: guse4-poc
+  clusterid: a
+  boot_disk:
+    size: 128
+    type: pd-ssd
+    image: windows-2019
+    #snapshot: projects/pcln-pl-airanalytics-prod/global/snapshots/guse4-air-001-boot
+    device_name: test-boot-disk
+  subnet_type: private
+  additional_disks:
+    disk_01:
+      size: 200
+      type: pd-ssd
+      device_name: test_disk_01
+    disk_02:
+      size: 100
+      type: pd-standard
+  team: sco_cd
+  labels:
+    owner: common_svcs_dev_priceline_com
+    dns: ""
+    inventory: ""
+    ansible: done
+  tags:
+  - infrastructure
+  - midtier-application
+  permissions:
+    instanceAdminV1:
+    - group:clouddev@priceline.com
